@@ -38,6 +38,7 @@ print(f'Dict: {dict}')
 #################
 ## GROUP BY
 #################
+# https://spark.apache.org/docs/latest/api/python/pyspark.sql.html#module-pyspark.sql.functions
 df_sales = spark.read.csv('sales_info.csv', inferSchema=True,header=True)
 df_sales.show()
 df_sales.printSchema()
